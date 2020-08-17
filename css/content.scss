@@ -1,0 +1,369 @@
+$grayish-dark-blue: #33323D;
+$very-light-grey:#fafafa;
+$dark-blue: #203A4C;
+$desaturated-cyan:#5fb4a2;
+$light-grey: #eaeaeb;
+$bright-red:#f43030;
+$font-heading:'Ibarra Real Nova',
+serif;
+$font-body:'Public Sans',
+sans-serif;
+$font-weight3:300;
+$font-weight4:400;
+$font-weight5:500;
+$font-weight6:600;
+$font-weight7:700;
+#top {
+    padding: 3% 7% 5% 7%;
+    background-color: $very-light-grey;
+    .col-text {
+        background-color: $very-light-grey;
+        h1 {
+            font-family: $font-heading;
+            font-size: 50px;
+            font-weight: $font-weight7;
+            line-height: 3rem;
+        }
+        button {
+            margin-top: 20px;
+            height: 50px;
+            width: 50%;
+            background-color: $dark-blue;
+            border-color: $dark-blue;
+            color: $very-light-grey;
+            font-family: $font-body;
+            text-transform: uppercase;
+            a {
+                text-decoration: none;
+                color: $very-light-grey;
+            }
+            &:hover {
+                background-color: $desaturated-cyan;
+                border-color: $desaturated-cyan;
+            }
+        }
+    }
+    .col-img {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (min-width:789px) {
+    .col-text {
+        width: 40%;
+        z-index: 1;
+        background-color: $very-light-grey;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        padding: 2% 5% 2% 3%;
+        margin-left: 8%;
+        h1 {
+            font-family: $font-heading;
+            font-size: 50px;
+            font-weight: $font-weight7;
+            line-height: 3rem;
+        }
+        button {
+            margin-top: 20px;
+            height: 50px;
+            width: 50%;
+            background-color: $dark-blue;
+            border-color: $dark-blue;
+            color: $very-light-grey;
+            font-family: $font-body;
+            text-transform: uppercase;
+        }
+    }
+    .col-img {
+        width: 100%;
+        margin-left: 4%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width:789px) {
+    .top-row {
+        flex-flow: column-reverse;
+        padding: 3% 0;
+        .col-text {
+            display: block;
+            position: relative;
+            margin-left: 0;
+            ;
+        }
+    }
+    .col-img {
+        margin-left: 0;
+        width: 100%;
+        img {
+            width: 120%;
+        }
+    }
+}
+
+#about {
+    padding: 5% 10%;
+    background-color: $very-light-grey;
+    .text-col {
+        padding: 2% 7% 2% 2%;
+        h2 {
+            font-family: $font-heading;
+            font-size: 40px;
+        }
+        h4 {
+            font-family: $font-body;
+            font-size: 22px;
+        }
+        a {
+            text-decoration: none;
+            color: $very-light-grey;
+        }
+        button {
+            margin-top: 20px;
+            height: 50px;
+            width: 50%;
+            background-color: $very-light-grey;
+            border-color: $dark-blue;
+            color: $dark-blue;
+            font-family: $font-body;
+            text-transform: uppercase;
+            &:hover {
+                background-color: $dark-blue;
+                color: $very-light-grey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    #about {
+        .about-row {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#projects {
+    padding: 5% 7%;
+    background-color: $very-light-grey;
+    .project-row {
+        padding: 3%;
+        img {
+            margin-right: 10px;
+            width: 100%;
+        }
+        .text-col {
+            padding: 7% 8% 7% 6%;
+            h2 {
+                font-family: $font-heading;
+                font-weight: $font-weight7;
+                font-size: 40px;
+            }
+            h4 {
+                font-family: $font-body;
+                font-weight: $font-weight4;
+                font-size: 18px;
+            }
+            .view-project-btn {
+                margin-top: 20px;
+                height: 50px;
+                width: 50%;
+                background-color: $very-light-grey;
+                border-color: $dark-blue;
+                color: $dark-blue;
+                font-family: $font-body;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: $dark-blue;
+                    color: $very-light-grey;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    .reverse {
+        flex-flow: column-reverse;
+    }
+}
+
+.contactme-cont {
+    padding: 5% 7%;
+    background-color: $very-light-grey;
+    h4 {
+        font-family: $font-body;
+        font-size: 20px;
+        font-weight: $font-weight4;
+    }
+    .contact-me-btn {
+        margin-top: 20px;
+        height: 50px;
+        width: 50%;
+        background-color: $very-light-grey;
+        border-color: $dark-blue;
+        color: $dark-blue;
+        font-family: $font-body;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $dark-blue;
+            color: $very-light-grey;
+        }
+    }
+    .contact-row {
+        margin-top: 60px;
+        .name-email-col {
+            padding-top: 10px;
+        }
+        h3 {
+            font-family: $font-heading;
+            font-size: 35px;
+            font-weight: $font-weight6;
+        }
+        h5 {
+            font-family: $font-body;
+            font-size: 25px;
+            font-weight: $font-weight4;
+        }
+        .message-col {
+            padding: 0 5%;
+            textarea {
+                width: 100%;
+                height: 100px;
+            }
+            button {
+                margin-top: 20px;
+                height: 50px;
+                width: 50%;
+                background-color: $very-light-grey;
+                border-color: $dark-blue;
+                color: $dark-blue;
+                font-family: $font-body;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: $dark-blue;
+                    color: $very-light-grey;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    .contactme-cont {
+        text-align: center;
+    }
+}
+
+#img-intro {
+    padding: 7% 10%;
+    background-color: $very-light-grey;
+    img {
+        width: 100%;
+    }
+}
+
+#project-info {
+    padding: 1% 10%;
+    background-color: $very-light-grey;
+    .info-col {
+        padding-right: 5%;
+        h2 {
+            font-family: $font-heading;
+            font-weight: $font-weight7;
+            font-size: 40px;
+        }
+        p {
+            font-family: $font-body;
+            font-weight: $font-weight3;
+            font-size: 15px;
+        }
+        h5 {
+            font-family: $font-body;
+            font-size: 16px;
+            font-weight: $font-weight4;
+            color: $desaturated-cyan;
+        }
+        button {
+            margin-top: 20px;
+            height: 50px;
+            width: 50%;
+            background-color: $very-light-grey;
+            border-color: $dark-blue;
+            color: $dark-blue;
+            font-family: $font-body;
+            text-transform: uppercase;
+            &:hover {
+                background-color: $dark-blue;
+                color: $very-light-grey;
+            }
+        }
+    }
+    .preview-col {
+        padding-left: 5%;
+        h3 {
+            font-family: $font-heading;
+            font-size: 35px;
+            font-weight: $font-weight5;
+        }
+        p {
+            font-family: $font-body;
+            font-weight: $font-weight3;
+            font-size: 15px;
+        }
+        img {
+            width: 100%;
+            padding: 3% 0;
+        }
+    }
+    .other-projects {
+        padding: 3% 0;
+        a {
+            text-decoration: none;
+            h3 {
+                font-family: $font-heading;
+                font-size: 35px;
+                font-weight: $font-weight5;
+                color: $dark-blue;
+            }
+            h5 {
+                font-family: $font-body;
+                font-weight: $font-weight3;
+                font-size: 15px;
+                color: $dark-blue;
+            }
+            img {
+                margin: 1%;
+                position: relative;
+                top: 20px;
+            }
+            .previous-proj {
+                text-align: left;
+            }
+            .next-proj {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    a {
+        img {
+            display: none;
+        }
+        .previous-proj {
+            text-align: center;
+        }
+        .next-proj {
+            text-align: center;
+            .next-proj-row {
+                flex-flow: column-reverse;
+            }
+        }
+    }
+}

@@ -1,0 +1,395 @@
+#top {
+  padding: 3% 7% 5% 7%;
+  background-color: #fafafa;
+}
+
+#top .col-text {
+  background-color: #fafafa;
+}
+
+#top .col-text h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+#top .col-text button {
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #203A4C;
+  border-color: #203A4C;
+  color: #fafafa;
+  font-family: "Public Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+#top .col-text button a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+#top .col-text button:hover {
+  background-color: #5fb4a2;
+  border-color: #5fb4a2;
+}
+
+#top .col-img {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 789px) {
+  .col-text {
+    width: 40%;
+    z-index: 1;
+    background-color: #fafafa;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    padding: 2% 5% 2% 3%;
+    margin-left: 8%;
+  }
+  .col-text h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+  .col-text button {
+    margin-top: 20px;
+    height: 50px;
+    width: 50%;
+    background-color: #203A4C;
+    border-color: #203A4C;
+    color: #fafafa;
+    font-family: "Public Sans", sans-serif;
+    text-transform: uppercase;
+  }
+  .col-img {
+    width: 100%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .top-row {
+    flex-flow: column-reverse;
+    padding: 3% 0;
+  }
+  .top-row .col-text {
+    display: block;
+    position: relative;
+    margin-left: 0;
+  }
+  .col-img {
+    margin-left: 0;
+    width: 100%;
+  }
+  .col-img img {
+    width: 120%;
+  }
+}
+
+#about {
+  padding: 5% 10%;
+  background-color: #fafafa;
+}
+
+#about .text-col {
+  padding: 2% 7% 2% 2%;
+}
+
+#about .text-col h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 40px;
+}
+
+#about .text-col h4 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 22px;
+}
+
+#about .text-col a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+#about .text-col button {
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #fafafa;
+  border-color: #203A4C;
+  color: #203A4C;
+  font-family: "Public Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+#about .text-col button:hover {
+  background-color: #203A4C;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 789px) {
+  #about .about-row img {
+    width: 100%;
+  }
+}
+
+#projects {
+  padding: 5% 7%;
+  background-color: #fafafa;
+}
+
+#projects .project-row {
+  padding: 3%;
+}
+
+#projects .project-row img {
+  margin-right: 10px;
+  width: 100%;
+}
+
+#projects .project-row .text-col {
+  padding: 7% 8% 7% 6%;
+}
+
+#projects .project-row .text-col h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#projects .project-row .text-col h4 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#projects .project-row .text-col .view-project-btn {
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #fafafa;
+  border-color: #203A4C;
+  color: #203A4C;
+  font-family: "Public Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+#projects .project-row .text-col .view-project-btn:hover {
+  background-color: #203A4C;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 789px) {
+  .reverse {
+    flex-flow: column-reverse;
+  }
+}
+
+.contactme-cont {
+  padding: 5% 7%;
+  background-color: #fafafa;
+}
+
+.contactme-cont h4 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contactme-cont .contact-me-btn {
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #fafafa;
+  border-color: #203A4C;
+  color: #203A4C;
+  font-family: "Public Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.contactme-cont .contact-me-btn:hover {
+  background-color: #203A4C;
+  color: #fafafa;
+}
+
+.contactme-cont .contact-row {
+  margin-top: 60px;
+}
+
+.contactme-cont .contact-row .name-email-col {
+  padding-top: 10px;
+}
+
+.contactme-cont .contact-row h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.contactme-cont .contact-row h5 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.contactme-cont .contact-row .message-col {
+  padding: 0 5%;
+}
+
+.contactme-cont .contact-row .message-col textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.contactme-cont .contact-row .message-col button {
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #fafafa;
+  border-color: #203A4C;
+  color: #203A4C;
+  font-family: "Public Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.contactme-cont .contact-row .message-col button:hover {
+  background-color: #203A4C;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 789px) {
+  .contactme-cont {
+    text-align: center;
+  }
+}
+
+#img-intro {
+  padding: 7% 10%;
+  background-color: #fafafa;
+}
+
+#img-intro img {
+  width: 100%;
+}
+
+#project-info {
+  padding: 1% 10%;
+  background-color: #fafafa;
+}
+
+#project-info .info-col {
+  padding-right: 5%;
+}
+
+#project-info .info-col h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#project-info .info-col p {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#project-info .info-col h5 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5fb4a2;
+}
+
+#project-info .info-col button {
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #fafafa;
+  border-color: #203A4C;
+  color: #203A4C;
+  font-family: "Public Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+#project-info .info-col button:hover {
+  background-color: #203A4C;
+  color: #fafafa;
+}
+
+#project-info .preview-col {
+  padding-left: 5%;
+}
+
+#project-info .preview-col h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+#project-info .preview-col p {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#project-info .preview-col img {
+  width: 100%;
+  padding: 3% 0;
+}
+
+#project-info .other-projects {
+  padding: 3% 0;
+}
+
+#project-info .other-projects a {
+  text-decoration: none;
+}
+
+#project-info .other-projects a h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 35px;
+  font-weight: 500;
+  color: #203A4C;
+}
+
+#project-info .other-projects a h5 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #203A4C;
+}
+
+#project-info .other-projects a img {
+  margin: 1%;
+  position: relative;
+  top: 20px;
+}
+
+#project-info .other-projects a .previous-proj {
+  text-align: left;
+}
+
+#project-info .other-projects a .next-proj {
+  text-align: right;
+}
+
+@media screen and (max-width: 789px) {
+  a img {
+    display: none;
+  }
+  a .previous-proj {
+    text-align: center;
+  }
+  a .next-proj {
+    text-align: center;
+  }
+  a .next-proj .next-proj-row {
+    flex-flow: column-reverse;
+  }
+}

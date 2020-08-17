@@ -1,0 +1,198 @@
+    $grayish-dark-blue: #33323D;
+    $very-light-grey:#fafafa;
+    $dark-blue: #203A4C;
+    $desaturated-cyan:#5fb4a2;
+    $font-heading:'Ibarra Real Nova',
+    serif;
+    $font-body:'Public Sans',
+    sans-serif;
+    $font-weight3:300;
+    $font-weight4:400;
+    $font-weight6:600;
+    $font-weight7:700;
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    #navbar {
+        z-index: 5;
+    }
+    
+    nav {
+        z-index: inherit;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 10vh;
+        background-color: $very-light-grey;
+        font-family: $font-body;
+        overflow: hidden;
+        .burger {
+            display: none;
+            cursor: pointer;
+            div {
+                width: 25px;
+                height: 3px;
+                background-color: $grayish-dark-blue;
+                margin: 5px;
+            }
+        }
+    }
+    
+    .nav-links {
+        z-index: 5;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        li {
+            list-style: none;
+            margin-top: 30px;
+            a {
+                color: $grayish-dark-blue;
+                text-decoration: none;
+                letter-spacing: 2px;
+                font-weight: $font-weight6;
+                font-size: 18px;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: $dark-blue;
+                }
+            }
+            .selected {
+                color: $desaturated-cyan;
+            }
+        }
+    }
+    
+    @media screen and (max-width:789px) {
+        body {
+            overflow-x: hidden;
+        }
+        nav {
+            overflow: hidden;
+            .burger {
+                display: block !important;
+                div {
+                    background-color: $grayish-dark-blue;
+                }
+            }
+        }
+        .nav-links {
+            z-index: 5;
+            overflow: hidden;
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 10vh;
+            background-color: $very-light-grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            opacity: 0.7;
+            li {
+                opacity: 0;
+            }
+            a {
+                color: $grayish-dark-blue;
+                align-items: center;
+            }
+        }
+    }
+    
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .toggle .line2 {
+        opacity: 0;
+    }
+    
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    // ----------------------CTA -----------------------------
+    #cta {
+        .cta-cont {
+            background-color: $very-light-grey;
+            padding: 5% 11%;
+            h3 {
+                font-family: $font-heading;
+                font-size: 40px;
+                font-weight: $font-weight7;
+                color: $grayish-dark-blue;
+            }
+            a {
+                position: relative;
+                left: 40%;
+                text-decoration: none;
+                color: $very-light-grey;
+                button {
+                    margin-top: 20px;
+                    height: 50px;
+                    width: 50%;
+                    background-color: $very-light-grey;
+                    border-color: $dark-blue;
+                    color: $dark-blue;
+                    font-family: $font-body;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: $dark-blue;
+                        color: $very-light-grey;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:789px) {
+        .cta-cont {
+            a {
+                align-self: stretch;
+            }
+        }
+    }
+    
+    //---------------------FOOTER----------------------
+    .footer-cont {
+        padding: 3% 11%;
+        background-color: $grayish-dark-blue;
+        color: $very-light-grey;
+        a {
+            padding: 2% 3%;
+            text-decoration: none;
+            color: $very-light-grey;
+            &:hover {
+                color: $desaturated-cyan;
+            }
+        }
+    }
+    
+    @media screen and (max-width:789px) {
+        .footer-cont {
+            text-align: center;
+            .links-footer {
+                margin: 2% auto;
+            }
+        }
+    }
